@@ -41,7 +41,7 @@ export default function ImageGrid({ images, favoritesOnly = false }: ImageGridPr
         ...image.movements
       ].map(t => t.toLowerCase());
 
-      const filterMatch = lowercasedActiveFilters.length === 0 || lowercasedActiveFilters.every(filter => 
+      const filterMatch = lowercasedActiveFilters.length === 0 || lowercasedActiveFilters.some(filter => 
         promptText.includes(filter) || allImageTags.some(tag => tag.includes(filter))
       );
 
