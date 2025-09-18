@@ -98,10 +98,12 @@ export default function AdminCollectionsPage() {
               </CardContent>
               <CardFooter className="flex justify-end gap-2">
                 {/* In a real app, these buttons would trigger edit/delete functionality */}
-                <Button variant="outline" size="sm">
-                  <Edit className="mr-2 h-4 w-4" />
-                  Edit
-                </Button>
+                <AlertDialogTrigger asChild>
+                  <Button variant="outline" size="sm">
+                    <Edit className="mr-2 h-4 w-4" />
+                    Edit
+                  </Button>
+                </AlertDialogTrigger>
                 <Button variant="destructive" size="sm">
                   <Trash2 className="mr-2 h-4 w-4" />
                   Delete
