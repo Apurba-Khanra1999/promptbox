@@ -14,3 +14,14 @@ export async function getEnrichedImages(): Promise<EnrichedImage[]> {
   // Simulate async operation if needed, but data is now local.
   return Promise.resolve(enrichedImagesData);
 }
+
+export async function getAllCollections(): Promise<string[]> {
+  const images = await getEnrichedImages();
+  const allTags = new Set<string>();
+  images.forEach(img => {
+    img.styles.forEach(s => allTags.add(s));
+    img.mediums.forEach(m => allTags.add(m));
+    img.movements.forEach(mv => allTags.add(mv));
+  });
+  return Array.from(allTags).sort();
+}
