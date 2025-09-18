@@ -47,8 +47,10 @@ export default function AdminLayout({
             </SidebarMenu>
           </SidebarContent>
         </Sidebar>
-        <main className="flex-1 p-4 md:p-6 lg:p-8">
-          {children}
+        <main className="flex-1">
+          <div className="p-4 md:p-6 lg:p-8">
+            {children}
+          </div>
         </main>
       </div>
     </SidebarProvider>
