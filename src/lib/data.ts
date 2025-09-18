@@ -1,4 +1,4 @@
-import promptboxEnrichedData from '@/lib/promptbox-enriched-data.json';
+import promptboxEnrichedData from '@/lib/aetheria-enriched-data.json';
 import type { Image, EnrichedImage } from './types';
 
 const enrichedImagesData: EnrichedImage[] = promptboxEnrichedData.map(item => ({

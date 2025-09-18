@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { Heart, Search } from 'lucide-react';
 import { useSearch } from '@/components/search-provider';
-import PromptBoxLogo from '@/components/promptbox-logo';
+import PromptBoxLogo from '@/components/aetheria-logo';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { usePathname } from 'next/navigation';
@@ -13,7 +13,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/10 bg-background/80 backdrop-blur-xl">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center space-x-2">
@@ -21,12 +21,12 @@ export default function Header() {
           </Link>
           <nav className="hidden items-center space-x-1 md:flex">
              <Link href="/" passHref>
-                <Button variant="ghost" className={cn(pathname === '/' && 'bg-accent/50 text-accent-foreground')}>
+                <Button variant="ghost" className={cn("font-medium", pathname === '/' && 'bg-accent/50 text-accent-foreground')}>
                     Gallery
                 </Button>
             </Link>
             <Link href="/favorites" passHref>
-                <Button variant="ghost" className={cn(pathname === '/favorites' && 'bg-accent/50 text-accent-foreground')}>
+                <Button variant="ghost" className={cn("font-medium", pathname === '/favorites' && 'bg-accent/50 text-accent-foreground')}>
                     Favorites
                 </Button>
             </Link>
