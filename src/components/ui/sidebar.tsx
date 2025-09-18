@@ -194,7 +194,7 @@ const Sidebar = React.forwardRef<
 
     if (isMobile) {
       return (
-        <Sheet open={openMobile} onOpenChange={setOpenMobile} {...props}>
+        <Sheet open={openMobile} onOpenChange={setOpenMobile}>
           <SheetContent
             data-sidebar="sidebar"
             data-mobile="true"
@@ -205,6 +205,7 @@ const Sidebar = React.forwardRef<
               } as React.CSSProperties
             }
             side={side}
+            {...props}
           >
             <div className="flex h-full w-full flex-col">{children}</div>
           </SheetContent>
@@ -583,7 +584,7 @@ const SidebarMenuButton = React.forwardRef<
         <TooltipContent
           side="right"
           align="center"
-          hidden={state !== "collapsed" || isMobile}
+          hidden={(state !== "collapsed" || isMobile)}
           {...tooltip}
         />
       </Tooltip>

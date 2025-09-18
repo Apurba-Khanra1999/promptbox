@@ -22,7 +22,7 @@ export default function ImageCard({ image, onImageClick }: ImageCardProps) {
   
   return (
     <div 
-      className="group relative block overflow-hidden rounded-lg shadow-lg"
+      className="group relative block overflow-hidden rounded-lg shadow-lg cursor-pointer"
       onClick={() => onImageClick(image)}
       role="button"
       tabIndex={0}
