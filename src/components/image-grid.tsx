@@ -40,7 +40,7 @@ export default function ImageGrid({ images, favoritesOnly = false }: ImageGridPr
         ...image.movements
       ].map(t => t.toLowerCase());
 
-      const filterMatch = activeFilters.length === 0 || activeFilters.every(filter => {
+      const filterMatch = activeFilters.length === 0 || activeFilters.some(filter => {
         const lowercasedFilter = filter.toLowerCase();
         return promptText.includes(lowercasedFilter) || allImageTags.some(tag => tag.includes(lowercasedFilter));
       });
@@ -74,11 +74,11 @@ export default function ImageGrid({ images, favoritesOnly = false }: ImageGridPr
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-6 md:py-8">
       {!favoritesOnly && <CuratedCollections allTags={allTags} />}
       
       {filteredImages.length > 0 ? (
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
+        <div className="columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
           {filteredImages.map((image, i) => (
             <div key={image.id} className="break-inside-avoid">
               <ImageCard 

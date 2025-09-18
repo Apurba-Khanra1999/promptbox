@@ -32,8 +32,8 @@ export default function ImageDetailView({ image, isOpen, onClose }: ImageDetailV
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-6xl w-full h-[90vh] p-0 flex flex-col md:flex-row gap-0 border-0">
-        <div className="relative w-full md:w-2/3 h-1/2 md:h-full bg-black/80 flex items-center justify-center">
+      <DialogContent className="max-w-4xl w-full h-full md:h-[90vh] flex flex-col md:flex-row p-0 gap-0">
+        <div className="relative w-full md:w-2/3 h-1/2 md:h-full bg-black/90 flex items-center justify-center">
           <Image
             src={image.imageUrl}
             alt={image.prompt}
@@ -42,27 +42,27 @@ export default function ImageDetailView({ image, isOpen, onClose }: ImageDetailV
             sizes="(max-width: 768px) 100vw, 66vw"
           />
         </div>
-        <div className="w-full md:w-1/3 h-1/2 md:h-full flex flex-col">
+        <div className="w-full md:w-1/3 h-1/2 md:h-full flex flex-col bg-card">
           <ScrollArea className="flex-grow">
             <div className="p-6 space-y-6">
               <DialogHeader>
-                <DialogTitle className="text-2xl font-bold">Prompt Details</DialogTitle>
+                <DialogTitle className="text-xl md:text-2xl font-bold font-headline">Prompt Details</DialogTitle>
               </DialogHeader>
             
               <div>
-                <h3 className="font-semibold text-lg mb-2 text-primary">Full Prompt</h3>
-                <p className="text-muted-foreground leading-relaxed">{image.prompt}</p>
+                <h3 className="font-semibold text-base md:text-lg mb-2 text-primary">Full Prompt</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm md:text-base">{image.prompt}</p>
               </div>
               
               {allTags.length > 0 && (
                 <div>
-                  <h3 className="font-semibold text-lg mb-3 text-primary">Discovered Tags</h3>
+                  <h3 className="font-semibold text-base md:text-lg mb-3 text-primary">Discovered Tags</h3>
                   <div className="flex flex-wrap gap-2">
                     {allTags.map((tag) => (
                       <Badge 
                           key={tag} 
                           variant="secondary" 
-                          className="cursor-pointer hover:bg-primary/20 transition-colors"
+                          className="cursor-pointer hover:bg-primary/20 transition-colors text-xs md:text-sm"
                           onClick={() => handleTagClick(tag)}
                       >
                         {tag}
@@ -74,7 +74,7 @@ export default function ImageDetailView({ image, isOpen, onClose }: ImageDetailV
             </div>
           </ScrollArea>
 
-          <div className="p-6 border-t mt-auto">
+          <div className="p-4 md:p-6 border-t mt-auto bg-background/50">
              <Button 
               variant="outline"
               size="lg"
