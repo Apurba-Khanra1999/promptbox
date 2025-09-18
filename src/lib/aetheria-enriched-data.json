@@ -1,7 +1,7 @@
 
 [
   {
-    "id": "aetheria-1",
+    "id": "promptbox-1",
     "prompt": "A city built in the clouds, with waterfalls cascading into the sky, painted in the style of Studio Ghibli, volumetric lighting, epic scale.",
     "width": 600,
     "height": 800,
@@ -11,7 +11,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-2",
+    "id": "promptbox-2",
     "prompt": "Portrait of an android dreaming of electric sheep, neon-noir aesthetic, Blade Runner-inspired, shallow depth of field, detailed cybernetics.",
     "width": 600,
     "height": 750,
@@ -21,7 +21,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-3",
+    "id": "promptbox-3",
     "prompt": "An ancient library hidden inside a giant, moss-covered tree. Sunbeams filter through the leaves, illuminating floating books. Fantasy, magical realism.",
     "width": 800,
     "height": 600,
@@ -31,7 +31,7 @@
     "movements": ["magical realism"]
   },
   {
-    "id": "aetheria-4",
+    "id": "promptbox-4",
     "prompt": "Cosmic whale swimming through a nebula, stars and galaxies reflected on its skin, abstract, ethereal, Hubble telescope photography.",
     "width": 900,
     "height": 600,
@@ -41,7 +41,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-5",
+    "id": "promptbox-5",
     "prompt": "A lone samurai warrior standing in a field of red spider lilies, ink wash painting (sumi-e) style, minimalist, high contrast.",
     "width": 600,
     "height": 850,
@@ -51,7 +51,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-6",
+    "id": "promptbox-6",
     "prompt": "Steampunk inventor's workshop, filled with brass gears, glowing vacuum tubes, and half-finished automatons, detailed illustration.",
     "width": 700,
     "height": 600,
@@ -61,7 +61,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-7",
+    "id": "promptbox-7",
     "prompt": "Abstract representation of a jazz melody, using bold geometric shapes, synesthesia, Kandinsky-inspired, vibrant colors.",
     "width": 600,
     "height": 600,
@@ -71,7 +71,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-8",
+    "id": "promptbox-8",
     "prompt": "A futuristic biodome on Mars, with lush terrestrial forests inside, contrasting with the red Martian landscape outside, sci-fi concept art.",
     "width": 800,
     "height": 500,
@@ -81,7 +81,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-9",
+    "id": "promptbox-9",
     "prompt": "Close-up of a dragon's eye, with a fiery galaxy swirling within the iris, photorealistic, macro photography.",
     "width": 600,
     "height": 600,
@@ -91,7 +91,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-10",
+    "id": "promptbox-10",
     "prompt": "A quiet, rainy night in a cyberpunk city alley, neon signs reflecting in the puddles, cinematic, moody atmosphere.",
     "width": 600,
     "height": 900,
@@ -101,7 +101,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-11",
+    "id": "promptbox-11",
     "prompt": "The Mad Hatter's tea party, re-imagined in a dark fantasy, gothic style. Tim Burton-esque characters, eerie lighting.",
     "width": 800,
     "height": 600,
@@ -111,7 +111,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-12",
+    "id": "promptbox-12",
     "prompt": "Crystalline cave shimmering with bioluminescent fungi, a hidden world underground, fantasy landscape, unreal engine.",
     "width": 750,
     "height": 600,
@@ -121,7 +121,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-13",
+    "id": "promptbox-13",
     "prompt": "Art Nouveau portrait of a forest dryad, her hair intertwined with vines and flowers, elegant lines, Alphonse Mucha inspired.",
     "width": 600,
     "height": 800,
@@ -131,7 +131,7 @@
     "movements": ["Art Nouveau"]
   },
   {
-    "id": "aetheria-14",
+    "id": "promptbox-14",
     "prompt": "An astronaut discovering an ancient alien artifact on a desolate moon, sense of wonder and isolation, matte painting, epic.",
     "width": 900,
     "height": 550,
@@ -141,7 +141,7 @@
     "movements": []
   },
   {
-    "id": "aetheria-15",
+    "id": "promptbox-15",
     "prompt": "Surreal landscape where the ground is a chessboard and the sky is filled with melting clocks, Salvador Dalí style.",
     "width": 800,
     "height": 600,
@@ -151,7 +151,7 @@
     "movements": ["surrealism"]
   },
   {
-    "id": "aetheria-16",
+    "id": "promptbox-16",
     "prompt": "A majestic griffin soaring over snow-capped mountains at sunrise, fantasy illustration, high detail, dramatic lighting.",
     "width": 900,
     "height": 600,

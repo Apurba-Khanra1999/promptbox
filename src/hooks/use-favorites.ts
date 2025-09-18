@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 
-const FAVORITES_KEY = 'aetheria-favorites';
+const FAVORITES_KEY = 'promptbox-favorites';
 
 export function useFavorites() {
   const [favorites, setFavorites] = useState<Set<string>>(new Set());

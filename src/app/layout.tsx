@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { SearchProvider } from '@/components/search-provider';
 
 export const metadata: Metadata = {
-  title: 'Aetheria',
+  title: 'PromptBox',
   description: 'A gallery for AI-generated images.',
 };
 

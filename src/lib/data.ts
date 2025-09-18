@@ -1,7 +1,7 @@
-import aetheriaEnrichedData from './aetheria-enriched-data.json';
+import promptboxEnrichedData from '@/lib/promptbox-enriched-data.json';
 import type { Image, EnrichedImage } from './types';
 
-const enrichedImagesData: EnrichedImage[] = aetheriaEnrichedData.map(item => ({
+const enrichedImagesData: EnrichedImage[] = promptboxEnrichedData.map(item => ({
   ...item,
   imageUrl: `https://picsum.photos/seed/${item.id}/${item.width}/${item.height}`,
 }));

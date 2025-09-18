@@ -1,11 +1,11 @@
-import { Aperture } from 'lucide-react';
+import { Box } from 'lucide-react';
 
-export default function AetheriaLogo() {
+export default function PromptBoxLogo() {
   return (
     <div className="flex items-center gap-2">
-      <Aperture className="h-7 w-7 text-primary" />
+      <Box className="h-7 w-7 text-primary" />
       <span className="text-2xl font-bold tracking-tighter text-foreground">
-        Aetheria
+        PromptBox
       </span>
     </div>
   );

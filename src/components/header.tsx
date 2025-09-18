@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { Heart, Search } from 'lucide-react';
 import { useSearch } from '@/components/search-provider';
-import AetheriaLogo from '@/components/aetheria-logo';
+import PromptBoxLogo from '@/components/promptbox-logo';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { usePathname } from 'next/navigation';
@@ -17,7 +17,7 @@ export default function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center space-x-2">
-            <AetheriaLogo />
+            <PromptBoxLogo />
           </Link>
           <nav className="hidden items-center space-x-1 md:flex">
              <Link href="/" passHref>
