@@ -29,7 +29,6 @@ export default function ImageGrid({ images, favoritesOnly = false }: ImageGridPr
     }
     
     const lowercasedSearchTerm = searchTerm.toLowerCase();
-    const lowercasedActiveFilters = activeFilters.map(f => f.toLowerCase());
     
     return currentImages.filter(image => {
       const promptText = image.prompt.toLowerCase();
@@ -41,9 +40,10 @@ export default function ImageGrid({ images, favoritesOnly = false }: ImageGridPr
         ...image.movements
       ].map(t => t.toLowerCase());
 
-      const filterMatch = lowercasedActiveFilters.length === 0 || lowercasedActiveFilters.some(filter => 
-        promptText.includes(filter) || allImageTags.some(tag => tag.includes(filter))
-      );
+      const filterMatch = activeFilters.length === 0 || activeFilters.every(filter => {
+        const lowercasedFilter = filter.toLowerCase();
+        return promptText.includes(lowercasedFilter) || allImageTags.some(tag => tag.includes(lowercasedFilter));
+      });
 
       return searchMatch && filterMatch;
     });
@@ -79,15 +79,19 @@ export default function ImageGrid({ images, favoritesOnly = false }: ImageGridPr
       
       {filteredImages.length > 0 ? (
         <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
-          {filteredImages.map(image => (
+          {filteredImages.map((image, i) => (
             <div key={image.id} className="break-inside-avoid">
-              <ImageCard image={image} onImageClick={handleImageClick} />
+              <ImageCard 
+                image={image} 
+                onImageClick={handleImageClick}
+                style={{ animationDelay: `${i * 30}ms`, animationFillMode: 'backwards' }}
+              />
             </div>
           ))}
         </div>
       ) : (
-        <div className="text-center py-16">
-          <h2 className="text-2xl font-semibold mb-2">
+        <div className="text-center py-16 animate-fade-in">
+          <h2 className="text-2xl font-semibold font-headline mb-2">
             {favoritesOnly ? 'No Favorites Yet' : 'No Results Found'}
           </h2>
           <p className="text-muted-foreground max-w-md mx-auto">
